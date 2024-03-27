@@ -9,3 +9,6 @@ class Solution {
         return multiple < Math.pow(sum,2)? 1:0;
     }
 }
+
+// for(int i : num_list) --> 모든 요소 나열
+// Math.pow(3, 2) --> 3의 2제곱 반환
