@@ -4,7 +4,7 @@ class Solution {
     public int solution(int a, int b, int c, int d) {
         
         int[] dice = {a, b, c, d};
-        Arrays.sort(dice);  // 오름차순 정렬
+        Arrays.sort(dice); // 오름차순 정렬
         
         int ans = 0;
         
