@@ -4,6 +4,7 @@ class Solution {
     public String[] solution(String my_string) {
         int length = my_string.length();
         // 주어진 문자열의 길이를 구함. 이 길이는 후행 문자열을 만들 때 사용
+        // 후행 문자열: 주어진 문자열에서 특정 위치부터 끝까지의 부분 문자열
         String[] suffixes = new String[length];
         // 주어진 문자열의 길이만큼의 공간을 가지는 문자열 배열을 생성
         // 이 배열에는 주어진 문자열의 모든 후행 문자열이 저장
