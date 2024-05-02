@@ -12,6 +12,7 @@ class Solution {
         for (String x : tmp){
             answer += x;
         }
+        // tmp 배열의 각 요소를 순차적으로 가져와서 x에 할당
         // 문자열을 하나로 합친다(빈 공간은 붙어도 어차피 포함X, 단순 "")
 
         return answer;
