@@ -6,6 +6,7 @@ class Solution {
         for (int i = 0; i < commands.length; i++){
             
             int[] temp = Arrays.copyOfRange(array, commands[i][0] - 1, commands[i][1]);
+            // copyOfRange - 지정한 배열을 원하는 길이만큼 복사
             // i - 1번째 수부터 j 직전까지 배열 추출
             Arrays.sort(temp);
             // 추출한 배열 오름차순 정렬
