@@ -8,5 +8,6 @@ class Solution {
                 list.add(names[i]);
         }
         return list.toArray(new String[list.size()]);
+        // new String[list.size()]는 리스트 크기와 동일한 길이의 String 배열을 생성
     }
 }
