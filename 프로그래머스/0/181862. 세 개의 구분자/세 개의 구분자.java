@@ -1,26 +1,13 @@
 import java.util.*;
 class Solution {
-    public String[] solution(String myStr) {
-        // 'a', 'b', 'c'를 ','로 대체
+    public List<String> solution(String myStr) {
+        List<String> answer = new ArrayList<>();
         myStr = myStr.replaceAll("a|b|c", ",");
-
-        // ','를 기준으로 문자열 분리
-        String[] splitStr = myStr.split(",");
-
-        // 빈 문자열 제거
-        List<String> resultList = new ArrayList<>();
-        for (String str : splitStr) {
-            if (!str.isEmpty()) {
-                resultList.add(str);
-            }
-        }
-
-        // 결과가 비어있으면 "EMPTY" 반환
-        if (resultList.isEmpty()) {
-            return new String[] { "EMPTY" };
-        }
-
-        // 결과 배열 반환
-        return resultList.toArray(new String[0]);
+        String[] list = myStr.split(",");
+        for (String i : list)
+            if (!i.equals(""))
+                answer.add(i);
+        if (answer.size()==0) answer.add("EMPTY");
+        return answer;
     }
 }
